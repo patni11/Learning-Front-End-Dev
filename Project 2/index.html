@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Dev Project 2</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+    <div class="navbar">
+        <div class="container">
+            
+            <a class="logo" href="index.html"> Remember<span>That</span></a>
+            
+            <img id="mobile-cta" class="mobile-menu" src="images/menu.svg" alt="hamburger">
+            
+            <nav>
+                <img id="mobile-exit" class="mobile-menu-exit" src="images/exit.svg" alt="cross">
+
+                <ul class="parimary_nav">
+                    <li class="current"><a href="#"> Home </a></li>
+                    <li><a href="#"> Features </a></li>
+                    <li><a href="#"> Pricing </a></li>
+                </ul>
+
+                <ul class="secondary_nav">
+                    <li><a href="#"> Contact</a></li>
+                    <li class="go_premium_cta"><a href="#"> Go Premium </a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </div>
+
+    <section class="hero">
+        <div class="container">
+            <div class="left-col">
+                <p class="subhead"> It's Nitty &amp; Gritty </p>
+                <h1> A Task App That Dosen't Stink</h1>
+            
+            <div class="hero-cta">
+                <a href="#" class="primary-cta"> Try for Free </a>
+                <a href="#" class="whatch-vid-cta"> 
+                    <img src="images/watch.svg" alt="watch a vid">
+                    Watch a Video   
+                </a>
+            </div>
+        </div>
+            <img src="images/illustration.svg" alt="illustration" class="hero-img">
+        </div>
+    </section>
+
+    <section class="features-section">
+        <div class="container">
+
+            <ul class="features-list">
+                <li>Lorem, ipsum dolor.</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+                <li>Item 4</li>
+                <li>Item 5</li>
+                <li>Item 6</li>
+                <li>Item 7</li>
+            </ul>
+            <img src="images/holding-phone.jpg" alt="image holding-phone">
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <div class="container">
+            <ul>
+                <li>
+                    <img src="images/person.jpg" alt="person1">
+                    <blockquote> Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum tempora et vero dignissimos delectus dicta aut amet quibusdam natus asperiores!</blockquote>
+                    <cite> Jane Doe</cite>
+                </li>
+                <li>
+                    <img src="images/person.jpg" alt="person1">
+                    <blockquote> Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum tempora et vero dignissimos delectus dicta aut amet quibusdam natus asperiores!</blockquote>
+                    <cite> Jane Doe</cite>
+                </li>
+                <li>
+                    <img src="images/person.jpg" alt="person1">
+                    <blockquote> Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum tempora et vero dignissimos delectus dicta aut amet quibusdam natus asperiores!</blockquote>
+                    <cite> Jane Doe</cite>
+                </li>
+            </ul>
+        </div>
+    </section>
+    
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-left">
+                <h2> Contact</h2>
+                <form action="">
+                    <label for="name"> Name </label>
+                    <input type="text" id="name" name="name">
+
+                    <label for="email"> Email </label>
+                    <input type="email" id="email" name="email">
+
+                    <label for="message"> Message </label>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                
+                    <input type="submit" class="send-message-cta" value="Send Message">
+                </form>
+            </div>
+
+            <div class="contact-right">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3549.400553310003!2d78.0421422!3d27.175144799999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39747121d702ff6d%3A0xdd2ae4803f767dde!2sTaj%20Mahal!5e0!3m2!1sen!2sin!4v1623665547203!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const mobileBtn = document.getElementById('mobile-cta')
+            nav = document.querySelector('nav')
+            mobileBtnExit = document.getElementById('mobile-exit');
+        
+        mobileBtn.addEventListener('click', () => {
+            nav.classList.add('menu-btn');
+        })
+
+        mobileBtnExit.addEventListener('click', () => {
+            nav.classList.remove('menu-btn');
+        })
+    </script>
+
+</body>
+</html>
